@@ -13,7 +13,6 @@ class Main extends PluginBase implements Listener{
   public function onEnable(){
       @mkdir($this->getDataFolder());
       $this->saveDefaultConfig();
-      $this->reloadConfig();
       $this->getServer()->getPluginManager()->registerEvents($this, $this);
       $this->getServer()->getLogger()->notice("JoinTitle by Enrick3344 Enabled!");
   }
