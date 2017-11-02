@@ -22,6 +22,6 @@ class SendTitleTask extends PluginTask{
         $fadein = $this->plugin->getConfig()->get("Fade-In");
         $lenght = $this->plugin->getConfig()->get("Lenght");
         $fadeout = $this->plugin->getConfig()->get("Fade-Out");
-        $player->addTitle($title, $subtitle, $fadein, $lenght, $fadeout);
+        $player->addTitle($this->plugin->translateColors($title, $subtitle, $fadein, $lenght, $fadeout));
     }
 }
